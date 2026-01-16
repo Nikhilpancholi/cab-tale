@@ -1,4 +1,4 @@
-import { MapPin, Calendar, Clock, Users, ArrowRight } from 'lucide-react';
+import { MapPin, Calendar, Clock, Users, ArrowRight, CreditCard } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 export function BookingForm() {
@@ -254,8 +254,8 @@ export function BookingForm() {
             <ArrowRight className="group-hover:translate-x-1 transition-transform" size={20} />
           </motion.button>
 
-          <p className="text-center text-sm" style={{ color: 'var(--cabtale-muted-gray)' }}>
-            💳 Multiple payment options • 🔒 Secure booking • 🚫 No hidden charges
+          <p className="text-center  text-md" style={{ color: 'var(--cabtale-muted-gray)' }}>
+            ✓ Multiple payment options  •   ✓ Secure booking  •   ✓ No hidden charges
           </p>
         </form>
       </div>
