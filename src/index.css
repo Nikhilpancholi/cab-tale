@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+/* Cabtale Brand Color Palette */
+
+:root {
+  /* 1. Core Brand Colors */
+  --cabtale-deep-navy: #384B70;
+  --cabtale-dark-navy: #2C3A59;
+  --cabtale-muted-steel: #506490;
+  --cabtale-soft-royal: #6C8CD5;
+  --cabtale-light-periwinkle: #D6E2FF;
+  --cabtale-deep-slate: #1E2C4F;
+  
+  /* 2. Supporting & Decorative Colors */
+  --cabtale-sky-accent: #9BB6FF;
+  --cabtale-pale-ice: #E1E9FF;
+  --cabtale-midnight-indigo: #2B3A63;
+  --cabtale-dusty-indigo: #3D4C72;
+  --cabtale-cool-lavender: #7C8BB3;
+  
+  /* 3. UI Surface & Background Colors */
+  --cabtale-bg-gray: #F3F5FA;
+  --cabtale-cloud-white: #F8F9FC;
+  --cabtale-soft-frost: #ECEFF6;
+  --cabtale-pure-white: #FFFFFF;
+  
+  /* 4. Typography Colors */
+  --cabtale-near-black: #1F1F1F;
+  --cabtale-charcoal: #2C2C2C;
+  --cabtale-dark-slate-gray: #3A3A3A;
+  --cabtale-steel-blue-gray: #3B4461;
+  --cabtale-deep-navy-text: #1F2A44;
+  --cabtale-muted-gray: #8C8FA1;
+  
+  /* 5. Status & Utility Colors */
+  --cabtale-alert-red: #FF5C5C;
+  --cabtale-soft-blush: #FEECEC;
+  --cabtale-light-error: #FFE4E4;
+  --cabtale-soft-border: #E0E3EB;
+  --cabtale-soft-shadow: #CBD3E0;
+  --cabtale-disabled: #B0B6C0;
+}
+
+
+/*  
+@theme {
+  --color-primary: #384b70;
+  --color-primary-dark: #2c3a59;
+  --color-primary-muted: #506490;
+  --color-secondary: #6c8cd5;
+  --color-secondary-light: #d6e2ff;
+  --color-secondary-text: #1e2c4f;
+  --color-accent: #9bb6ff;
+  --color-accent-soft: #e1e9ff;
+  --color-tertiary-text: #2b3a63;
+  --color-border-muted: #3d4c72;
+  --color-accent-dim: #7c8bb3;
+  --bg-app: #f3f5fa;
+  --bg-surface: #f8f9fc;
+  --bg-elevated: #eceff6;
+  --bg-white: #fff;
+  --text-heading: #1f1f1f;
+  --text-primary: #2c2c2c;
+  --text-secondary: #3a3a3a;
+  --text-body: #3b4461;
+  --text-muted: #1f2a44;
+  --text-placeholder: #8c8fa1;
+  --color-error: #ff5c5c;
+  --color-error-bg: #feecec;
+  --color-error-light: #ffe4e4;
+  --border-default: #e0e3eb;
+  --shadow-default: #cbd3e0;
+  --disabled: #b0b6c0;
+}
+
+*/
