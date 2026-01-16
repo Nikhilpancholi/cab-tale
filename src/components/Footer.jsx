@@ -176,7 +176,7 @@ export function Footer() {
           style={{ borderColor: 'rgba(255, 255, 255, 0.1)' }}
         >
           <p style={{ color: 'var(--cabtale-light-periwinkle)' }}>
-            © 2026 CabTale. All rights reserved. Made with ❤️ in Delhi NCR
+            © 2026 CabTale. All rights reserved.
           </p>
           <div className="flex gap-6">
             <a
