@@ -9,7 +9,7 @@ export function Header() {
       <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
-          <div className="flex-shrink-0">
+          <div className="shrink-0">
             <h1 className="text-2xl font-bold" style={{ color: 'var(--cabtale-deep-navy)' }}>
               CabTale
             </h1>
@@ -20,11 +20,11 @@ export function Header() {
             <a href="#home" className="transition-colors" style={{ color: 'var(--cabtale-charcoal)' }}>
               Home
             </a>
-            <a href="#services" className="transition-colors hover:opacity-70" style={{ color: 'var(--cabtale-charcoal)' }}>
-              Services
-            </a>
             <a href="#about" className="transition-colors hover:opacity-70" style={{ color: 'var(--cabtale-charcoal)' }}>
               About
+            </a>
+            <a href="#services" className="transition-colors hover:opacity-70" style={{ color: 'var(--cabtale-charcoal)' }}>
+              Services
             </a>
             <a href="#contact" className="transition-colors hover:opacity-70" style={{ color: 'var(--cabtale-charcoal)' }}>
               Contact
