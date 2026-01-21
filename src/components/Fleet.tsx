@@ -1,33 +1,27 @@
 import { motion } from 'framer-motion';
+
 import sedanImg from '../assets/car-sedan.png';
 import hatchbackImg from '../assets/car-hatchback.png';
 import suvImg from '../assets/car-suv.png';
-import luxuryImg from '../assets/car-luxary.png';
 
 const fleetCategories = [
   {
-    name: 'Sedan',
-    price: '₹15/km',
-    description: 'Comfortable rides for 4 passengers with ample luggage space.',
-    carImage: sedanImg,
-  },
-  {
     name: 'Hatchback',
-    price: '₹12/km',
-    description: 'Economical choice perfect for city travels and short trips.',
+    price: '₹11/km',
+    description: 'Comfortable rides for 4 passengers with ample luggage space.',
     carImage: hatchbackImg,
   },
   {
-    name: 'SUV',
-    price: '₹22/km',
-    description: 'Spacious luxury for 6-7 passengers with premium comfort.',
-    carImage: suvImg,
+    name: 'Sedan',
+    price: '₹13/km',
+    description: 'Economical choice perfect for city travels and short trips.',
+    carImage: sedanImg,
   },
   {
-    name: 'Luxury',
-    price: '₹35/km',
-    description: 'Premium experience with high-end vehicles and chauffeurs.',
-    carImage: luxuryImg,
+    name: 'SUV (7-Seater)',
+    price: '₹15/km',
+    description: 'Spacious luxury for 6-7 passengers with premium comfort.',
+    carImage: suvImg,
   },
 ];
 
@@ -49,7 +43,7 @@ export function Fleet() {
         </motion.div>
 
         {/* Fleet Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {fleetCategories.map((category, index) => (
             <motion.div
               key={index}

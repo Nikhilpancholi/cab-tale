@@ -4,11 +4,11 @@ import { CheckCircle2, FileText, MapPin, DollarSign, Shield, Users, Clock, Trend
 import { useState } from 'react';
 import { ImageWithFallback } from '../components/figma/ImageWtihFallback';
 
-export function DriverOnboarding() {
-  const [openFaq, setOpenFaq] = useState<number | null>(null);
+const DriverOnboarding = () => {
+  const [openFaq, setOpenFaq] = useState(null);
 
   return (
-    <div className="min-h-screen pt-20" style={{ backgroundColor: 'var(--cabtale-pure-white)' }}>
+    <div className="w-full" style={{ backgroundColor: 'var(--cabtale-pure-white)' }}>
       {/* Welcome Section */}
       <section className="relative py-24 overflow-hidden" style={{ backgroundColor: 'var(--cabtale-deep-navy)' }}>
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -369,24 +369,24 @@ export function DriverOnboarding() {
           <div className="space-y-4">
             {[
               {
-                q: 'What are the minimum requirements to drive with CabTale?',
-                a: 'You need a valid driving license (at least 1 year old), a registered vehicle with valid insurance and PUC, and basic documents like Aadhaar/PAN for verification.',
+                q: 'Kya meri car commercial honi chahiye?',
+                a: 'Haan. State/RTO rules ke hisaab se commercial permit, fitness, insurance, PUC zaroori hai. Driver ke liye valid DL aur basic verification chahiye.',
               },
               {
-                q: 'How much can I earn as a CabTale driver?',
-                a: 'Earnings vary based on hours driven and routes. On average, drivers earn ₹30,000-₹50,000 per month. Airport and outstation trips typically offer higher earnings.',
+                q: 'Earning kaise hoti hai? Surge hota hai?',
+                a: 'Upfront per-km fare (Hatchback/Sedan/SUV). Accept karne se pehle total amount app mein dikh jata hai. Surge nahi—transparent fares.',
               },
               {
-                q: 'Is there any commission on rides?',
-                a: 'CabTale charges a minimal platform fee of 10-15% on city rides. Airport transfers have zero commission!',
+                q: 'Kya main sirf airport ya sirf outstation rides choose kar sakta hoon?',
+                a: 'Bilkul. App mein route filters aur category set kijiye—sirf matching requests aayengi.',
               },
               {
-                q: 'How long does the onboarding process take?',
-                a: 'Once you submit all documents, verification typically takes 24-48 hours. You can start earning as soon as you\'re approved.',
+                q: 'Payout kab milta hai?',
+                a: 'Regular, reliable schedule. App statements mein daily summary, settlements aur breakdown clear milta hai.',
               },
               {
-                q: 'Can I drive part-time?',
-                a: 'Absolutely! You have complete flexibility to choose your working hours. Many drivers work part-time and earn extra income.',
+                q: 'Cancel/Wait time ka kya? Support milega?',
+                a: 'Cancellation & waiting policies app mein clearly shown hoti hain. 24×7 support, live tracking aur SOS available.',
               },
             ].map((faq, index) => (
               <motion.div
@@ -450,4 +450,6 @@ export function DriverOnboarding() {
       </section>
     </div>
   );
-}
+};
+
+export default DriverOnboarding;

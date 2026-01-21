@@ -1,5 +1,6 @@
 import { Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin, Send } from 'lucide-react';
 import { motion } from 'framer-motion';
+import logo from '../assets/cabtale-logo.png';
 
 export function Footer() {
   return (
@@ -61,25 +62,32 @@ export function Footer() {
           <div>
             <div className="flex items-center gap-2 mb-4">
               <div 
-                className="w-10 h-10 rounded-xl flex items-center justify-center"
-                style={{
-                  background: 'linear-gradient(135deg, var(--cabtale-soft-royal), var(--cabtale-sky-accent))',
-                }}
+                className="w-25 h-10 rounded-xl flex items-center justify-center"
+               
               >
-                <span className="text-xl" style={{ color: 'var(--cabtale-pure-white)' }}>C</span>
+                {/* <span className="text-xl" style={{ color: 'var(--cabtale-pure-white)' }}>C</span> */}
+                <img src={logo} alt="CabTale Logo" />
               </div>
               <h3 className="text-xl" style={{ color: 'var(--cabtale-pure-white)' }}>
-                CabTale
+                
               </h3>
             </div>
             <p className="mb-6" style={{ color: 'var(--cabtale-light-periwinkle)' }}>
               Your trusted partner for safe and reliable transportation across Delhi NCR. Making every journey memorable.
             </p>
+
             <div className="flex gap-3">
-              {[Facebook, Twitter, Instagram, Linkedin].map((Icon, idx) => (
+              {[
+                { Icon: Facebook, url: 'https://www.facebook.com/share/16u615t4PD/' },
+                { Icon: Twitter, url: 'https://x.com/CabtaleOfficial?t=L_xEveQnMUZ_o4Ad9kIDIg&s=09' },
+                { Icon: Instagram, url: 'https://www.instagram.com/cabtale_official/' },
+                { Icon: Linkedin, url: 'https://www.linkedin.com/company/cabtale/' }
+              ].map((social, idx) => (
                 <motion.a
                   key={idx}
-                  href="#"
+                  href={social.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="p-2.5 rounded-lg transition-colors"
                   style={{ backgroundColor: 'rgba(255, 255, 255, 0.1)' }}
                   whileHover={{ 
@@ -88,7 +96,7 @@ export function Footer() {
                   }}
                   whileTap={{ scale: 0.95 }}
                 >
-                  <Icon size={20} style={{ color: 'var(--cabtale-pure-white)' }} />
+                  <social.Icon size={20} style={{ color: 'var(--cabtale-pure-white)' }} />
                 </motion.a>
               ))}
             </div>

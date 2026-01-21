@@ -1,4 +1,4 @@
-import { MapPin, Calendar, Clock, Users, ArrowRight, CreditCard } from 'lucide-react';
+import { MapPin, Calendar, Clock, Users, ArrowRight, CreditCard, MapPinHouse } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 export function BookingForm() {
@@ -56,7 +56,7 @@ export function BookingForm() {
                   className="w-8 h-8 rounded-lg flex items-center justify-center"
                   style={{ backgroundColor: 'var(--cabtale-pale-ice)' }}
                 >
-                  <MapPin size={16} style={{ color: 'var(--cabtale-deep-navy)' }} />
+                  <MapPinHouse size={16} style={{ color: 'var(--cabtale-deep-navy)' }} />
                 </div>
                 Pickup Location
               </label>
