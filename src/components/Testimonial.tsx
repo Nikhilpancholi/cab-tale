@@ -175,17 +175,16 @@ export function Testimonials() {
         transition={{ duration: 0.6 }}
       >
         <div 
-          className="grid grid-cols-2 md:grid-cols-4 gap-8 p-8 md:p-12 rounded-3xl"
+          className="grid grid-cols-2 md:grid-cols-3 gap-8 p-8 md:p-12 rounded-3xl"
           style={{ 
             backgroundColor: 'var(--cabtale-pure-white)',
             boxShadow: '0 4px 20px rgba(56, 75, 112, 0.08)',
           }}
         >
           {[
-            { value: '50,000+', label: 'Happy Customers' },
-            { value: '1M+', label: 'Rides Completed' },
-            { value: '4.8/5', label: 'Average Rating' },
-            { value: '500+', label: 'Verified Drivers' },
+            { value: '300+', label: 'Happy Customers' },
+            { value: '1000+', label: 'Vehicles' },
+            { value: '120+', label: 'Routes' },
           ].map((stat, index) => (
             <div key={index} className="text-center">
               <div className="text-4xl md:text-5xl mb-2" style={{ color: 'var(--cabtale-deep-navy)' }}>

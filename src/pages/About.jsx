@@ -206,6 +206,45 @@ export function About() {
         </div>
       </section>
 
+      {/* section with right side image and left side text content. section background is   */}
+      <section className="py-24">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:p-4 rounded-3xl" style={{ backgroundColor: 'var(--cabtale-bg-gray)' }}>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+            >
+              <img
+                src="/src/assets/about-section.webp"
+                alt="CabTale Safety Features"
+                className="w-full h-auto rounded-3xl shadow-lg"
+              />
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+            >
+              <h2 className="text-4xl md:text-4xl mb-6" style={{ color: 'var(--cabtale-deep-navy)' }}>
+                Advanced Safety Features
+              </h2>
+              <p className="text-lg font-medium mb-6 leading-relaxed" style={{ color: 'var(--cabtale-muted-gray)' }}>
+                Our AI-powered safety systems include real-time monitoring, emergency alerts, and live CCTV feeds
+                accessible to your trusted contacts. This ensures that help is always just a click away, providing
+                unparalleled peace of mind during your journeys.
+              </p>
+              <p className="text-lg leading-relaxed" style={{ color: 'var(--cabtale-muted-gray)' }}>
+                With CabTale, experience a new standard of safety and security on the road, making every ride not just
+                comfortable but truly safe.
+              </p>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
       {/* Mission & Vision */}
       <section className="py-24" style={{ backgroundColor: 'var(--cabtale-bg-gray)' }}>
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">

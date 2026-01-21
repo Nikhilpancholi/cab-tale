@@ -9,7 +9,7 @@ export function Services() {
       {/* conver image */} 
       <div className="w-[95%] h-auto m-auto rounded-3xl overflow-hidden shadow-lg ">
               <ImageWithFallback
-                src="/src/assets/service-cov.jpg"
+                src="/src/assets/service-top.webp"
                 alt="CabTale Service-cov"
                 className="w-full h-full object-cover"
                 fallbackSrc="/assets/placeholder.jpg"

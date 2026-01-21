@@ -12,7 +12,7 @@ export function Footer() {
         </svg>
       </div>
 
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-24 pb-12 relative z-10">
+      <div className="mx-auto mt-1.5 max-w-7xl px-4 sm:px-6 lg:px-8 pt-24 pb-12 relative z-10">
         {/* Newsletter Section */}
         <motion.div
           className="rounded-3xl p-8 md:p-12 mb-16 relative overflow-hidden"
@@ -22,7 +22,7 @@ export function Footer() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-9 items-center ">
             <div>
               <h3 className="text-3xl mb-3" style={{ color: 'var(--cabtale-pure-white)' }}>
                 Stay Updated
