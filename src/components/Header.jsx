@@ -81,11 +81,11 @@ export function Header() {
             </Link>
 
             <Link 
-              to="/about" 
+              to="/services" 
               className="transition-all hover:scale-105" 
               style={{ 
-                color: isActive('/about') ? 'var(--cabtale-soft-royal)' : 'var(--cabtale-charcoal)',
-                fontWeight: isActive('/about') ? '600' : '400',
+                color: isActive('/services') ? 'var(--cabtale-soft-royal)' : 'var(--cabtale-charcoal)',
+                fontWeight: isActive('/services') ? '600' : '400',
               }}
             >
               Services

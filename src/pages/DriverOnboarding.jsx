@@ -57,7 +57,7 @@ const DriverOnboarding = () => {
             >
               <div className="rounded-3xl overflow-hidden shadow-2xl">
                 <ImageWithFallback
-                  src="https://images.unsplash.com/photo-1628188765472-50896231dafb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBkcml2ZXIlMjBjYXJ8ZW58MXx8fHwxNzY4ODk1NDQ1fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                  src="/src/assets/cab-driver.png"
                   alt="Professional driver"
                   className="w-full h-auto"
                 />
