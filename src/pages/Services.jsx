@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { Wifi, Shield, Video, Car, Plane, Mountain, MapPin, Clock, Users, Briefcase, CheckCircle, Star } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { ImageWithFallback } from '../components/figma/ImageWtihFallback';
+import ServiceTop from "../assets/service-top.webp"
 
 export function Services() {
   return (
@@ -9,7 +10,7 @@ export function Services() {
       {/* conver image */} 
       <div className="w-[95%] h-auto m-auto rounded-3xl overflow-hidden shadow-lg ">
               <ImageWithFallback
-                src="/src/assets/service-top.webp"
+                src={ServiceTop}
                 alt="CabTale Service-cov"
                 className="w-full h-full object-cover"
                 fallbackSrc="/assets/placeholder.jpg"

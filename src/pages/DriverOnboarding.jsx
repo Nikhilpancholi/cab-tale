@@ -3,6 +3,7 @@ import { CheckCircle2, FileText, MapPin, DollarSign, Shield, Users, Clock, Trend
 
 import { useState } from 'react';
 import { ImageWithFallback } from '../components/figma/ImageWtihFallback';
+import CabDriverImage from "../assets/cab-driver.png"
 
 const DriverOnboarding = () => {
   const [openFaq, setOpenFaq] = useState(null);
@@ -57,7 +58,7 @@ const DriverOnboarding = () => {
             >
               <div className="rounded-3xl overflow-hidden shadow-2xl lg:w-[80%]">
                 <ImageWithFallback
-                  src="/src/assets/cab-driver.png"
+                  src={CabDriverImage}
                   alt="Professional driver"
                   className="w-full h-auto"
                 />
