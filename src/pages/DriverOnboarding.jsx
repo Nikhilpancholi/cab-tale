@@ -55,7 +55,7 @@ const DriverOnboarding = () => {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              <div className="rounded-3xl overflow-hidden shadow-2xl">
+              <div className="rounded-3xl overflow-hidden shadow-2xl lg:w-[80%]">
                 <ImageWithFallback
                   src="/src/assets/cab-driver.png"
                   alt="Professional driver"

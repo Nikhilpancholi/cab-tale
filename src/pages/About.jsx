@@ -2,6 +2,8 @@ import { motion } from 'framer-motion';
 import { Wifi, Shield, Users, Award, Target, TrendingUp, CheckCircle, Heart, Eye } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { ImageWithFallback } from '../components/figma/ImageWtihFallback';
+import aboutPageImg from "../assets/about-page.webp"; 
+import aboutSection from  "../assets/about-section.webp"
 
 
 export function About() {
@@ -11,7 +13,7 @@ export function About() {
 
       <div className="w-[95%] h-[90%]  m-auto rounded-3xl overflow-hidden shadow-lg ">
         <ImageWithFallback
-          src="/src/assets/about-page.webp"
+          src={aboutPageImg}
           alt="CabTale About Cover"
           className="w-full h-full object-cover"
           fallbackSrc="/assets/placeholder.jpg"
@@ -217,7 +219,7 @@ export function About() {
               transition={{ duration: 0.8 }}
             >
               <img
-                src="/src/assets/about-section.webp"
+                src={aboutSection}
                 alt="CabTale Safety Features"
                 className="w-full h-auto rounded-3xl shadow-lg"
               />
