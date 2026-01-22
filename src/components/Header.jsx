@@ -161,14 +161,7 @@ export function Header() {
             >
               Home
             </Link>
-            <Link
-              to="/booking"
-              className="block py-2 transition-colors"
-              style={{ color: 'var(--cabtale-charcoal)' }}
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              Book Ride
-            </Link>
+
             <Link
               to="/about"
               className="block py-2 transition-colors"
@@ -177,13 +170,32 @@ export function Header() {
             >
               About
             </Link>
+
+            <Link
+              to="/services"
+              className="block py-2 transition-colors"
+              style={{ color: 'var(--cabtale-charcoal)' }}
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Services
+            </Link>
+
+            <Link
+              to="/booking"
+              className="block py-2 transition-colors"
+              style={{ color: 'var(--cabtale-charcoal)' }}
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Booking
+            </Link>
+
             <Link
               to="/driver-onboarding"
               className="block py-2 transition-colors"
               style={{ color: 'var(--cabtale-charcoal)' }}
               onClick={() => setMobileMenuOpen(false)}
             >
-              Drive with Us
+              Driver Onboarding
             </Link>
             <a 
               href="tel:+919876543210" 
