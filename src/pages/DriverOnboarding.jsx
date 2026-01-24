@@ -4,6 +4,7 @@ import { CheckCircle2, FileText, MapPin, DollarSign, Shield, Users, Clock, Trend
 import { useState } from 'react';
 import { ImageWithFallback } from '../components/figma/ImageWtihFallback';
 import CabDriverImage from "../assets/cab-driver.png"
+import { Link } from 'react-router-dom';
 
 const DriverOnboarding = () => {
   const [openFaq, setOpenFaq] = useState(null);
@@ -37,6 +38,7 @@ const DriverOnboarding = () => {
                   </div>
                 ))}
               </div>
+              <Link to="/apply-now">
               <motion.button
                 className="px-8 py-4 rounded-xl transition-all"
                 style={{
@@ -48,6 +50,7 @@ const DriverOnboarding = () => {
               >
                 Start Your Journey
               </motion.button>
+              </Link>
             </motion.div>
 
             <motion.div
@@ -435,6 +438,7 @@ const DriverOnboarding = () => {
             <p className="text-xl mb-8" style={{ color: 'var(--cabtale-pale-ice)' }}>
               Join CabTale today and be part of Delhi NCR's fastest-growing driver community
             </p>
+            <Link to="/apply-now">
             <motion.button
               className="px-10 py-5 rounded-xl text-xl transition-all"
               style={{
@@ -446,6 +450,7 @@ const DriverOnboarding = () => {
             >
               Apply Now
             </motion.button>
+            </Link>
           </motion.div>
         </div>
       </section>

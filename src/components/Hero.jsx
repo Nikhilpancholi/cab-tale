@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { ArrowRight, Play } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { BookingForm } from './BookingFrom';
 import { ImageWithFallback } from './figma/ImageWtihFallback';
 import image from '../assets/image.png';
@@ -76,7 +77,8 @@ export function Hero() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
-              <button
+              <Link 
+                to="/booking"
                 className="group px-8 py-4 rounded-xl transition-all hover:shadow-2xl hover:scale-105 flex items-center justify-center gap-2"
                 style={{
                   background: 'linear-gradient(135deg, var(--cabtale-deep-navy), var(--cabtale-soft-royal))',
@@ -85,7 +87,7 @@ export function Hero() {
               >
                 <span>Book Your Ride</span>
                 <ArrowRight className="group-hover:translate-x-1 transition-transform" size={20} />
-              </button>
+              </Link>
               {/* <button
                 className="px-8 py-4 rounded-xl border-2 transition-all hover:shadow-lg flex items-center justify-center gap-2"
                 style={{

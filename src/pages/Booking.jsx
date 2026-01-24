@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 import { MapPin, Calendar, Clock, Users, Car, CreditCard, Check } from 'lucide-react';
+import { AppBookingPromo } from '../components/AppBookingPromo';
 
 const steps = [
   { id: 1, title: 'Location', icon: MapPin },
@@ -298,6 +299,11 @@ export function Booking() {
           </div>
         </motion.div>
       </div>
+
+      {/* Coming Soon Section */}
+      <AppBookingPromo />
     </div>
+
+    
   );
 }

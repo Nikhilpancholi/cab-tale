@@ -9,6 +9,7 @@ import { Booking } from "./pages/Booking"
 import DriverOnboarding from "./pages/DriverOnboarding"
 import { About } from "./pages/About"
 import { Services } from "./pages/Services"
+import { ApplyNow } from "./pages/ApplyNow"
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
           <Route path="/services" element={<Services />} />
           <Route path="/booking" element={<Booking />} />
           <Route path="/driver-onboarding" element={<DriverOnboarding />} />
+          <Route path="/apply-now" element={<ApplyNow />} />
         </Routes>
         <Footer />
       </div>

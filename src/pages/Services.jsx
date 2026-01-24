@@ -7,15 +7,7 @@ import ServiceTop from "../assets/service-top.webp"
 export function Services() {
   return (
     <div className="min-h-screen pt-25" style={{ backgroundColor: 'var(--cabtale-pure-white)' }}>
-      {/* conver image */} 
-      <div className="w-[95%] h-auto m-auto rounded-3xl overflow-hidden shadow-lg ">
-              <ImageWithFallback
-                src={ServiceTop}
-                alt="CabTale Service-cov"
-                className="w-full h-full object-cover"
-                fallbackSrc="/assets/placeholder.jpg"
-              />
-            </div>
+
       {/* Hero Section */}
       <section className="py-24" style={{ backgroundColor: 'var(--cabtale-bg-gray)' }}>
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -44,6 +36,16 @@ export function Services() {
           </motion.div>
         </div>
       </section>
+
+            {/* conver image */} 
+      <div className="w-[80%] h-auto mt-8 m-auto rounded-3xl overflow-hidden shadow-lg ">
+              <ImageWithFallback
+                src={ServiceTop}
+                alt="CabTale Service-cov"
+                className="w-full h-full object-cover"
+                fallbackSrc="/assets/placeholder.jpg"
+              />
+            </div>
 
       {/* Service Types */}
       <section className="py-24" style={{ backgroundColor: 'var(--cabtale-pure-white)' }}>

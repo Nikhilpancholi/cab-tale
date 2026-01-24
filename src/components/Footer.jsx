@@ -1,6 +1,6 @@
 import { Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin, Send } from 'lucide-react';
 import { motion } from 'framer-motion';
-import logo from '../assets/cabtale-logo.png';
+import logo from '../assets/new-cabtale-logo.png';
 
 export function Footer() {
   return (
@@ -150,8 +150,7 @@ export function Footer() {
                   <Phone size={18} style={{ color: 'var(--cabtale-soft-royal)' }} />
                 </div>
                 <div>
-                  <p style={{ color: 'var(--cabtale-light-periwinkle)' }}>+91 98765 43210</p>
-                  <p style={{ color: 'var(--cabtale-light-periwinkle)' }}>+91 98765 43211</p>
+                  <p style={{ color: 'var(--cabtale-light-periwinkle)' }}>+011 6965 6817</p>
                 </div>
               </li>
               <li className="flex items-start gap-3">
@@ -171,7 +170,7 @@ export function Footer() {
                   <MapPin size={18} style={{ color: 'var(--cabtale-soft-royal)' }} />
                 </div>
                 <p style={{ color: 'var(--cabtale-light-periwinkle)' }}>
-                  Connaught Place, <br />New Delhi, 110001
+                  123, Tech Park, Sector 62,<br />Noida, Delhi NCR, India
                 </p>
               </li>
             </ul>
