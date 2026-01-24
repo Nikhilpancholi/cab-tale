@@ -38,12 +38,11 @@ export function Services() {
       </section>
 
             {/* conver image */} 
-      <div className="w-[80%] h-auto mt-8 m-auto rounded-3xl overflow-hidden shadow-lg ">
+      <div className="w-[90%] md:w-[80%] h-auto mt-8 m-auto rounded-3xl overflow-hidden shadow-lg ">
               <ImageWithFallback
                 src={ServiceTop}
                 alt="CabTale Service-cov"
                 className="w-full h-full object-cover"
-                fallbackSrc="/assets/placeholder.jpg"
               />
             </div>
 
