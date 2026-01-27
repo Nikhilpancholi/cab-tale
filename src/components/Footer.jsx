@@ -150,7 +150,7 @@ export function Footer() {
                   <Phone size={18} style={{ color: 'var(--cabtale-soft-royal)' }} />
                 </div>
                 <div>
-                  <p style={{ color: 'var(--cabtale-light-periwinkle)' }}>+011 6965 6817</p>
+                  <p style={{ color: 'var(--cabtale-light-periwinkle)' }}>+91 85276 64228 </p>
                 </div>
               </li>
               <li className="flex items-start gap-3">

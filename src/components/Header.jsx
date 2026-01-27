@@ -116,7 +116,7 @@ export function Header() {
 
           <div className="hidden lg:flex lg:items-center lg:gap-4">
             <a 
-              href="tel:+919876543210" 
+              href="tel:+91 8527664228" 
               className="flex items-center gap-2 px-4 py-2 rounded-lg transition-all hover:opacity-80"
               style={{ 
                 backgroundColor: 'var(--cabtale-pale-ice)',
@@ -124,7 +124,7 @@ export function Header() {
               }}
             >
               <Phone size={18} />
-              <span>+011 6965 6817</span>
+              <span>+91 8527664228</span>
             </a>
             <Link
               to="/booking"
