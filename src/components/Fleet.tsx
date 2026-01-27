@@ -64,15 +64,17 @@ export function Fleet() {
             >
               {/* Car Image Container */}
               <div 
-                className="w-full h-28 mb-6 rounded-2xl overflow-hidden transition-transform group-hover:scale-105"
+                className="w-full  mb-6 rounded-2xl overflow-hidden transition-transform group-hover:scale-105"
                 style={{ 
                   backgroundColor: 'var(--cabtale-pure-white)',
+                  aspectRatio: '16/9',
                 }}
               >
                 <img 
                   src={category.carImage} 
                   alt={category.name}
                   className="w-full h-full object-cover"
+                  loading='lazy'
                 />
               </div>
 
