@@ -1,9 +1,9 @@
 import { motion } from 'framer-motion';
 
-import sedanImg from '../assets/car-sedan.png';
-import hatchbackImg from '../assets/car-hatchback.png';
-import suvImg from '../assets/car-suv.png';
-import rideSafeImg from '../assets/car-ridesafe.png';
+import sedanImg from '../assets/cars-sedan.jpeg';
+import hatchbackImg from '../assets/cars-hatchback.jpeg';
+import suvImg from '../assets/cars-suv.jpeg';
+import rideSafeImg from '../assets/cars-ridesafe.jpeg';
 
 const fleetCategories = [
   {
