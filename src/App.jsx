@@ -10,6 +10,7 @@ import DriverOnboarding from "./pages/DriverOnboarding"
 import { About } from "./pages/About"
 import { Services } from "./pages/Services"
 import { ApplyNow } from "./pages/ApplyNow"
+import WhatsappUs from "./components/WhatsappUs"
 
 const App = () => {
   return (
@@ -26,6 +27,10 @@ const App = () => {
         </Routes>
         <Footer />
       </div>
+
+      {/* WhatsApp sticky button */}
+      <WhatsappUs />
+
     </BrowserRouter>
 
   )
