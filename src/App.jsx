@@ -28,9 +28,8 @@ const App = () => {
         <Footer />
       </div>
 
-      {/* WhatsApp sticky button */}
+      {/* WhatsApp button */}
       <WhatsappUs />
-
     </BrowserRouter>
 
   )

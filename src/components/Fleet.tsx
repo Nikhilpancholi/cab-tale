@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import sedanImg from '../assets/car-sedan.png';
 import hatchbackImg from '../assets/car-hatchback.png';
 import suvImg from '../assets/car-suv.png';
+import rideSafeImg from '../assets/car-ridesafe.png';
 
 const fleetCategories = [
   {
@@ -22,6 +23,12 @@ const fleetCategories = [
     price: '₹15/km',
     description: 'Spacious luxury for 6-7 passengers with premium comfort.',
     carImage: suvImg,
+  },
+  {
+  name: 'Ride Safe',
+  price: '₹17/km',
+  description: 'AI powered safety features for a secure journey.',
+  carImage: rideSafeImg,
   },
 ];
 
@@ -43,7 +50,7 @@ export function Fleet() {
         </motion.div>
 
         {/* Fleet Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {fleetCategories.map((category, index) => (
             <motion.div
               key={index}
