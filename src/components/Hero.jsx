@@ -55,7 +55,7 @@ export function Hero() {
               }}
             >
               <span className="w-2 h-2 rounded-full animate-pulse" style={{ backgroundColor: 'var(--cabtale-soft-royal)' }} />
-              <span className="text-sm">#1 Safe Outstation Cabs in Delhi/NCR</span>
+              <span className="text-sm font-semibold">#1 Safe & Most Affordable Cabs in Delhi/NCR</span>
             </div>
 
             <h1 className="text-5xl md:text-6xl lg:text-7xl mb-6 leading-tight">
