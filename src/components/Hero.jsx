@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion';
-import { ArrowRight, Play } from 'lucide-react';
+import { ArrowRight, Play, Clock, Users } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import { BookingForm } from './BookingFrom';
 import { ImageWithFallback } from './figma/ImageWtihFallback';
 import image from '../assets/image.png';
 import { SafetyFeatures } from './SafetyFeature';
@@ -70,10 +69,10 @@ export function Hero() {
                 Our Priority
               </span>
             </h1>
-
+                       
             <p className="text-lg md:text-xl mb-8 leading-relaxed" style={{ color: 'var(--cabtale-muted-gray)' }}>
               Experience premium cab services across Delhi NCR with professional drivers, 
-              comfortable rides, and transparent pricing. Book in seconds, travel in comfort.
+              comfortable rides, and transparent pricing.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
@@ -88,21 +87,32 @@ export function Hero() {
                 <span>Book Your Ride</span>
                 <ArrowRight className="group-hover:translate-x-1 transition-transform" size={20} />
               </Link>
-              {/* <button
-                className="px-8 py-4 rounded-xl border-2 transition-all hover:shadow-lg flex items-center justify-center gap-2"
-                style={{
-                  borderColor: 'var(--cabtale-deep-navy)',
-                  color: 'var(--cabtale-deep-navy)',
-                }}
-              >
-                <div className="w-10 h-10 rounded-full flex items-center justify-center"
-                  style={{ backgroundColor: 'var(--cabtale-pale-ice)' }}
-                >
-                  <Play size={16} fill="currentColor" />
+              </div>
+             {/* want to add two highlights bullet points */}
+
+             <div className="flex  sm:flex-row gap-6 mb-8">
+              <div className="flex items-center gap-3">
+                <div className="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center" style={{ backgroundColor: 'var(--cabtale-pale-ice)' }}>
+                  <Clock size={18} style={{ color: 'var(--cabtale-soft-royal)' }} />
                 </div>
-                <span>Watch Demo</span>
-              </button> */}
+                <div>
+                  <p className="text-sm font-semibold" style={{ color: 'var(--cabtale-deep-navy)' }}>2-Hour Advance Booking</p>
+                </div>
+              </div>
+              <div className="flex items-center gap-3">
+                <div className="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center" style={{ backgroundColor: 'var(--cabtale-pale-ice)' }}>
+                  <Users size={18} style={{ color: 'var(--cabtale-soft-royal)' }} />
+                </div>
+                <div>
+                  <p className="text-sm font-semibold" style={{ color: 'var(--cabtale-deep-navy)' }}>2+ Partners Active Within 150 km</p>
+                </div>
+              </div>
             </div>
+
+
+            
+
+
 
             {/* Stats */}
             <div className="grid grid-cols-3 gap-6">
