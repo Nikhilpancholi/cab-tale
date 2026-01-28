@@ -150,7 +150,7 @@ export function Footer() {
                   <Phone size={18} style={{ color: 'var(--cabtale-soft-royal)' }} />
                 </div>
                 <div>
-                  <p style={{ color: 'var(--cabtale-light-periwinkle)' }}>+91 85276 64228 </p>
+                  <p style={{ color: 'var(--cabtale-light-periwinkle)' }}>+91 85376 64228 </p>
                 </div>
               </li>
               <li className="flex items-start gap-3">
@@ -160,7 +160,7 @@ export function Footer() {
                 >
                   <Mail size={18} style={{ color: 'var(--cabtale-soft-royal)' }} />
                 </div>
-                <p style={{ color: 'var(--cabtale-light-periwinkle)' }}>support@cabtale.com</p>
+                <p style={{ color: 'var(--cabtale-light-periwinkle)' }}>hello@cabtale.com</p>
               </li>
               <li className="flex items-start gap-3">
                 <div 
