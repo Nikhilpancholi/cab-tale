@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { Wifi, Shield, Users, Award, Target, TrendingUp, CheckCircle, Heart, Eye } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { ImageWithFallback } from '../components/figma/ImageWtihFallback';
-import aboutPageImg from "../assets/about-page.webp"; 
+import aboutPageImg from "../assets/about-page.jpg"; 
 import aboutSection from  "../assets/about-section.webp"
 
 
@@ -103,15 +103,16 @@ export function About() {
       </section>
 
       {/* cover image section - div should have rounded corners margins */}
+      <section className='px-4 lg:px-30 pt-24' >
+        <div className="m-auto rounded-3xl overflow-hidden shadow-lg ">
+          <ImageWithFallback
+            src={aboutPageImg}
+            alt="CabTale About Cover"
+            className="w-full h-full object-cover"
+          />
+        </div>
+      </section>
 
-      <div className="w-[95%] h-[90%]  m-auto rounded-3xl overflow-hidden shadow-lg ">
-        <ImageWithFallback
-          src={aboutPageImg}
-          alt="CabTale About Cover"
-          className="w-full h-full object-cover"
-          fallbackSrc="/assets/placeholder.jpg"
-        />
-      </div>
 
       {/* Our Story */}
       <section className="py-24" style={{ backgroundColor: 'var(--cabtale-pure-white)' }}>

@@ -124,7 +124,7 @@ export function Header() {
               }}
             >
               <Phone size={18} />
-              <span>+91 8527664228</span>
+              <span>+91 8537664228</span> 
             </a>
             <Link
               to="/booking"

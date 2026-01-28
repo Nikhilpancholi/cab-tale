@@ -4,23 +4,23 @@ import { motion } from 'framer-motion';
 const services = [
   {
     icon: Car,
-    title: 'City Rides',
-    description: 'Safe, trusted city rides – anytime, latest agents.',
+    title: 'Road Trips',
+    description: 'Safe, trusted car rides for all your travel needs.',
   },
   {
     icon: Plane,
-    title: 'Airport Pickup',
-    description: 'Safe, smilation simpsom every an pate services.',
+    title: 'Airport Pickup & Drop',
+    description: 'Safe, reliable airport transfer services.',
   },
   {
     icon: Mountain,
-    title: 'Outstation',
-    description: 'Contra nabile cestat-ston porless ahaset time.',
+    title: 'Hometown Rides',
+    description: 'Experience local rides with trusted drivers.',
   },
   {
     icon: Briefcase,
     title: 'Corporate Travel',
-    description: 'Callum egentane prelence from exater, grualdance.',
+    description: 'Professional travel solutions for your business needs.',
   },
 ];
 
@@ -37,7 +37,7 @@ export function Services() {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-3xl md:text-4xl" style={{ color: 'var(--cabtale-deep-navy)' }}>
-            Our Services
+            Book your ride
           </h2>
         </motion.div>
 

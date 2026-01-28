@@ -4,7 +4,7 @@ const WhatsappUs = () => {
   return (
         <div className="fixed bottom-6 right-6 z-50 group">
           <a
-            href="https://wa.me/8527664228 "
+            href="https://wa.me/8537664228"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-3"

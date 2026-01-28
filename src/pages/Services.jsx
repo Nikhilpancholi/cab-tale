@@ -4,6 +4,13 @@ import { Link } from 'react-router-dom';
 import { ImageWithFallback } from '../components/figma/ImageWtihFallback';
 import ServiceTop from "../assets/service-top.webp"
 
+
+//images
+import sedanImg from '../assets/cars-sedan.jpeg';
+import hatchbackImg from '../assets/cars-hatchback.jpeg';
+import suvImg from '../assets/cars-suv.jpeg';
+import rideSafeImg from '../assets/cars-ridesafe.jpeg';
+
 export function Services() {
   return (
     <div className="min-h-screen pt-25" style={{ backgroundColor: 'var(--cabtale-pure-white)' }}>
@@ -217,7 +224,7 @@ export function Services() {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             {[
               {
                 type: 'Hatchback',
@@ -225,13 +232,15 @@ export function Services() {
                 seats: '4 Seater',
                 description: 'Compact, fuel-efficient, and perfect for city driving.',
                 features: ['Great mileage', 'Easy city parking', 'Low maintenance', 'Smooth daily commute'],
+                img : hatchbackImg,
               },
               {
                 type: 'Sedan',
                 price: '₹13/km',
                 seats: '4 Seater',
                 description: 'Stylish, spacious, and perfect for families or executives.',
-                features: ['Spacious interiors', 'Comfortable ride', 'Premium features', 'Long distance travel'],
+                features: ['Spacious interiors', 'Comfortable ride', 'Premium features', 'Long travel'],
+                img : sedanImg,
               },
               {
                 type: 'SUV',
@@ -239,6 +248,15 @@ export function Services() {
                 seats: '7 Seater',
                 description: 'Rugged, powerful, and ready for every adventure.',
                 features: ['All-terrain performance', 'Spacious seating', 'Advanced safety', 'Perfect for road trips'],
+                img : suvImg,
+              },
+              {
+                type: 'Ride Safe',
+                price: '₹17/km',
+                seats: '7 Seater',
+                description: 'Top-tier safety with AI features for a secure journey.  ',
+                features: ['AI Safety Features', 'Live CCTV Link', 'Verified Drivers', 'Peace of Mind Travel'],
+                img : rideSafeImg,
               },
             ].map((vehicle, index) => (
               <motion.div
@@ -251,6 +269,20 @@ export function Services() {
                 transition={{ delay: index * 0.1 }}
               >
                 <div className="p-8">
+                  <div 
+                className="w-full  mb-6 rounded-2xl overflow-hidden transition-transform group-hover:scale-105"
+                style={{ 
+                  backgroundColor: 'var(--cabtale-pure-white)',
+                  aspectRatio: '16/9',
+                }}
+              >
+                <img 
+                  src={vehicle.img} 
+                  alt={vehicle.type}
+                  className="w-full h-full object-cover"
+                  loading='lazy'
+                />
+              </div>
                   <div className="flex items-center justify-between mb-6">
                     <div>
                       <h3 className="text-2xl mb-1" style={{ color: 'var(--cabtale-deep-navy)' }}>
