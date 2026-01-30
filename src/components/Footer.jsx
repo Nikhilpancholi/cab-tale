@@ -1,6 +1,6 @@
 import { Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin, Send } from 'lucide-react';
 import { motion } from 'framer-motion';
-import logo from '../assets/new-cabtale-logo.png';
+import logo from '../assets/cabtale-logo-light.png';
 
 export function Footer() {
   return (
@@ -62,8 +62,8 @@ export function Footer() {
           <div>
             <div className="flex items-center gap-2 mb-4">
               <div 
-                className="w-25 h-10 rounded-xl flex items-center justify-center"
-               
+                className="w-25 rounded-xl flex items-center justify-center"
+               style={{ backgroundColor: 'rgba(255, 255, 255, 0.1)' }}
               >
                 {/* <span className="text-xl" style={{ color: 'var(--cabtale-pure-white)' }}>C</span> */}
                 <img src={logo} alt="CabTale Logo" />
@@ -170,7 +170,7 @@ export function Footer() {
                   <MapPin size={18} style={{ color: 'var(--cabtale-soft-royal)' }} />
                 </div>
                 <p style={{ color: 'var(--cabtale-light-periwinkle)' }}>
-                  123, Tech Park, Sector 62,<br />Noida, Delhi NCR, India
+                  C-104, Gurudwara Rd, Mohan Garden, Nawada,<br />New Delhi, Delhi, 110059
                 </p>
               </li>
             </ul>

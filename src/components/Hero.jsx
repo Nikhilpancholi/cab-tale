@@ -147,7 +147,7 @@ export function Hero() {
                 className="w-full h-auto"
               />
               {/* Floating Card */}
-              <motion.div
+              {/* <motion.div
                 className="absolute top-6 left-6 right-6 rounded-2xl p-6 shadow-2xl backdrop-blur-md"
                 style={{ backgroundColor: 'rgba(255, 255, 255, 0.95)' }}
                 initial={{ y: 20, opacity: 0 }}
@@ -173,7 +173,7 @@ export function Hero() {
                     Use: NEW30
                   </div>
                 </div>
-              </motion.div>
+              </motion.div> */}
             </div>
 
             {/* Decorative Elements */}
