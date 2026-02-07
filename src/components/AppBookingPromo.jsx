@@ -81,7 +81,7 @@ export function AppBookingPromo() {
               </div>
               <div className="text-left">
                 <div className="text-sm opacity-90">Call us at</div>
-                <div className="text-2xl">+011 6965 6817</div>
+                <div className="text-2xl">+91 85376 64228</div>
               </div>
             </motion.a>
 
