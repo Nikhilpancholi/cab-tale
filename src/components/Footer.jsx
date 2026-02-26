@@ -1,6 +1,7 @@
 import { Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin, Send } from 'lucide-react';
 import { motion } from 'framer-motion';
 import logo from '../assets/cabtale-logo-light.png';
+import { Link } from 'react-router-dom';
 
 export function Footer() {
   return (
@@ -186,27 +187,27 @@ export function Footer() {
             © 2026 CabTale. All rights reserved.
           </p>
           <div className="flex gap-6">
-            <a
-              href="#"
+            <Link
+              to="/privacy-policy"
               className="transition-colors hover:opacity-80"
               style={{ color: 'var(--cabtale-light-periwinkle)' }}
             >
               Privacy Policy
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              to="/terms-of-service"
               className="transition-colors hover:opacity-80"
               style={{ color: 'var(--cabtale-light-periwinkle)' }}
             >
               Terms of Service
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              to="/cookie-policy"
               className="transition-colors hover:opacity-80"
               style={{ color: 'var(--cabtale-light-periwinkle)' }}
             >
               Cookie Policy
-            </a>
+            </Link>
           </div>
         </div>
       </div>

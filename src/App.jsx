@@ -11,6 +11,9 @@ import { About } from "./pages/About"
 import { Services } from "./pages/Services"
 import { ApplyNow } from "./pages/ApplyNow"
 import WhatsappUs from "./components/WhatsappUs"
+import PrivacyPolicy from "./pages/PrivacyPolicy"
+import TermsOfService from "./pages/TermsOfService"
+import CookiePolicy from "./pages/CookiePolicy"
 
 const App = () => {
   return (
@@ -24,6 +27,9 @@ const App = () => {
           <Route path="/booking" element={<Booking />} />
           <Route path="/driver-onboarding" element={<DriverOnboarding />} />
           <Route path="/apply-now" element={<ApplyNow />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/terms-of-service" element={<TermsOfService />} />
+          <Route path="/cookie-policy" element={<CookiePolicy />} />
         </Routes>
         <Footer />
       </div>
