@@ -219,6 +219,46 @@ export function Header() {
             >
               Book Now
             </Link>
+
+
+
+
+
+
+
+
+                    {/* Bottom Bar */}
+        <div
+          className="pt-8 border-t flex flex-col md:flex-row justify-between items-center gap-4"
+          style={{ borderColor: 'rgba(255, 255, 255, 0.1)' }}
+        >
+          <p style={{ color: 'var(--cabtale-light-periwinkle)' }}>
+            © 2026 CabTale. All rights reserved.
+          </p>
+          <div className="flex gap-6">
+            <Link
+              to="/privacy-policy"
+              className="transition-colors hover:opacity-80"
+              style={{ color: 'var(--cabtale-light-periwinkle)' }}
+            >
+              Privacy Policy
+            </Link>
+            <Link
+              to="/terms-of-service"
+              className="transition-colors hover:opacity-80"
+              style={{ color: 'var(--cabtale-light-periwinkle)' }}
+            >
+              Terms of Service
+            </Link>
+            <Link
+              to="/cookie-policy"
+              className="transition-colors hover:opacity-80"
+              style={{ color: 'var(--cabtale-light-periwinkle)' }}
+            >
+              Cookie Policy
+            </Link>
+          </div>
+        </div>
           </div>
         )}
       </nav>
