@@ -2,7 +2,7 @@ import { Menu, X, Phone } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
-import logo from '../assets/cabtale-logo-dark.png';
+import logo from '../assets/cabtale-logo-dark-removebg-preview.png';
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -49,7 +49,7 @@ export function Header() {
             <img src={logo} alt="CabTale Logo" />
           </Link> */}
           {/* Logo */}
-          <Link to="/" className="shrink-0 flex items-center gap-2 bg-black">
+          <Link to="/" className="shrink-0 flex items-center gap-2 ">
             <img 
               src={logo} 
               alt="CabTale Logo" 
