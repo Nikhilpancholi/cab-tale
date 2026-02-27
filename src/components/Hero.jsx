@@ -117,7 +117,7 @@ export function Hero() {
             {/* Stats */}
             <div className="grid grid-cols-3 gap-6">
               {[
-                { value: '50K+', label: 'Happy Riders' },
+                { value: '30K+', label: 'Happy Rides' },
                 { value: '4.8★', label: 'User Rating' },
                 { value: '24/7', label: 'Support' },
               ].map((stat, index) => (
