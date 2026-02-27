@@ -116,7 +116,7 @@ export function Coverage() {
         </div>
 
         {/* CTA Banner */}
-        <motion.div
+        {/* <motion.div
           className="rounded-3xl p-8 md:p-12 relative overflow-hidden"
           style={{
             background: 'linear-gradient(135deg, var(--cabtale-deep-navy), var(--cabtale-muted-steel))',
@@ -126,7 +126,6 @@ export function Coverage() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          {/* Decorative circles */}
           <div className="absolute top-0 right-0 w-64 h-64 rounded-full opacity-10"
             style={{ background: 'radial-gradient(circle, var(--cabtale-soft-royal), transparent)' }}
           />
@@ -164,7 +163,7 @@ export function Coverage() {
               </motion.button>
             </div>
           </div>
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
   );

@@ -182,7 +182,7 @@ export function Testimonials() {
           }}
         >
           {[
-            { value: '300+', label: 'Happy Customers' },
+            { value: '30,000+', label: 'Happy Customers' },
             { value: '1000+', label: 'Vehicles' },
             { value: '120+', label: 'Routes' },
           ].map((stat, index) => (

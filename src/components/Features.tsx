@@ -1,6 +1,7 @@
 import { Shield, Clock, DollarSign, Users, Star, Award, Zap, Heart } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { ImageWithFallback } from './figma/ImageWtihFallback';
+import { Link } from 'react-router-dom';
 
 const features = [
   {
@@ -199,7 +200,7 @@ export function Features() {
               whileHover={{ scale: 1.05, boxShadow: '0 10px 30px rgba(56, 75, 112, 0.3)' }}
               whileTap={{ scale: 0.95 }}
             >
-              Learn More About Us
+              <Link to="/about">Learn More About Us</Link>
             </motion.button>
           </motion.div>
         </div>

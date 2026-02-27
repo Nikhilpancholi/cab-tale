@@ -131,6 +131,25 @@ export function Hero() {
                 </div>
               ))}
             </div>
+<div className="flex flex-row items-center justify-between py-6 gap-6">
+  <h2 className="text-xl sm:text-2xl font-semibold mb-3" style={{ color: 'var(--cabtale-deep-navy)' }}>Download Booking App</h2>
+  <div className="flex gap-3">
+    <a href="https://play.google.com/store" target="_blank" rel="noopener noreferrer">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+        alt="Get it on Google Play"
+        className="h-10"
+      />
+    </a>
+    <a href="https://www.apple.com/app-store/" target="_blank" rel="noopener noreferrer">
+      <img
+        src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+        alt="Download on the App Store"
+        className="h-10"
+      />
+    </a>
+  </div>
+</div>
           </motion.div>
 
           {/* Right - Hero Image */}

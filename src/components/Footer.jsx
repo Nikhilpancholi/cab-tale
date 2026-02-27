@@ -105,23 +105,29 @@ export function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h4 className="mb-6 text-lg" style={{ color: 'var(--cabtale-pure-white)' }}>
-              Quick Links
-            </h4>
-            <ul className="space-y-3">
-              {['Home', 'Services', 'Fleet', 'About Us', 'Careers', 'Partner with Us'].map((link, idx) => (
-                <li key={idx}>
-                  <a
-                    href="#"
-                    className="transition-all hover:translate-x-1 inline-block"
-                    style={{ color: 'var(--cabtale-light-periwinkle)' }}
-                  >
-                    {link}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
+  <h4 className="mb-6 text-lg" style={{ color: 'var(--cabtale-pure-white)' }}>
+    Quick Links
+  </h4>
+  <ul className="space-y-3">
+    {[
+      { name: 'Home', path: '/' },
+      { name: 'Services', path: '/services' },
+      { name: 'About Us', path: '/about' },
+      { name: 'Careers', path: '/careers' },
+      { name: 'Partner with Us', path: '/driver-onboarding' }
+    ].map((link, idx) => (
+      <li key={idx}>
+        <Link
+          to={link.path}
+          className="transition-all hover:translate-x-1 inline-block"
+          style={{ color: 'var(--cabtale-light-periwinkle)' }}
+        >
+          {link.name}
+        </Link>
+      </li>
+    ))}
+  </ul>
+</div>
 
           {/* Services */}
           <div>

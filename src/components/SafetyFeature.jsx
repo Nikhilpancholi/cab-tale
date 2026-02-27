@@ -128,7 +128,7 @@ export function SafetyFeatures() {
 
             {/* CTA Button */}
             <motion.button
-              className="group px-8 py-4 rounded-xl transition-all hover:shadow-2xl flex items-center gap-3"
+              className="group hidden px-8 py-4 rounded-xl transition-all hover:shadow-2xl flex items-center gap-3"
               style={{
                 backgroundColor: 'var(--cabtale-deep-navy)',
                 color: 'var(--cabtale-pure-white)',
@@ -140,7 +140,7 @@ export function SafetyFeatures() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              <span className="text-lg">Explore Safety Tech</span>
+              <span className="text-lg ">Explore Safety Tech</span>
               <CheckCircle size={20} className="group-hover:rotate-12 transition-transform" />
             </motion.button>
           </motion.div>
